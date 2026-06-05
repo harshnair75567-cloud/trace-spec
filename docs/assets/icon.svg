@@ -1,34 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d0a1f"/>
-      <stop offset="100%" stop-color="#071828"/>
+      <stop offset="0%" stop-color="#f5f3ff"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
     </linearGradient>
     <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#7c3aed"/>
       <stop offset="100%" stop-color="#0ea5e9"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
   <rect width="400" height="400" fill="url(#bg)"/>
   <path d="M200,58 L326,112 L326,224 C326,298 268,340 200,360 C132,340 74,298 74,224 L74,112 Z"
-        fill="url(#brand)" opacity="0.07"/>
-  <path d="M200,58 L326,112 L326,224 C326,298 268,340 200,360 C132,340 74,298 74,224 L74,112 Z"
-        fill="none" stroke="url(#brand)" stroke-width="3.5" opacity="0.55" stroke-linejoin="round"/>
-  <!-- Eye outer shape -->
+        fill="url(#brand)" opacity="0.10" stroke="url(#brand)" stroke-width="3.5" stroke-linejoin="round"/>
+  <!-- Eye outline -->
   <path d="M110,210 Q200,138 290,210 Q200,282 110,210 Z"
-        fill="url(#brand)" opacity="0.06"/>
-  <path d="M110,210 Q200,138 290,210 Q200,282 110,210 Z"
-        fill="none" stroke="url(#brand)" stroke-width="3" opacity="0.50" filter="url(#glow)"/>
+        fill="url(#brand)" opacity="0.10" stroke="url(#brand)" stroke-width="3.5"/>
   <!-- Iris glow -->
-  <circle cx="200" cy="210" r="38" fill="url(#brand)" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="200" cy="210" r="38" fill="url(#brand)" opacity="0.15"/>
   <!-- Iris -->
-  <circle cx="200" cy="210" r="28" fill="url(#brand)" opacity="0.35" filter="url(#glow)"/>
+  <circle cx="200" cy="210" r="26" fill="url(#brand)" opacity="0.30"/>
   <!-- Pupil -->
-  <circle cx="200" cy="210" r="16" fill="url(#brand)" filter="url(#glow)"/>
+  <circle cx="200" cy="210" r="15" fill="url(#brand)"/>
   <!-- White center -->
-  <circle cx="200" cy="210" r="6" fill="white" opacity="0.95"/>
+  <circle cx="200" cy="210" r="5" fill="white"/>
 </svg>
