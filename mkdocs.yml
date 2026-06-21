@@ -145,7 +145,7 @@ extra_css:
   - docs/stylesheets/extra.css
 
 nav:
-  - Home: README.md
+  - Home: docs/index.md
   - Getting Started:
       - Quickstart: docs/quickstart.md
       - Verification: docs/verification.md
@@ -165,6 +165,7 @@ nav:
       - NVIDIA H100: docs/platforms/nvidia-h100.md
   - Crosswalks:
       - OWASP Agentic Top 10: docs/crosswalks/owasp-agentic-top-10.md
+  - Test Suite: https://tests.agentrust-io.com
   - Project:
       - Limitations: LIMITATIONS.md
       - Changelog: CHANGELOG.md
@@ -172,3 +173,5 @@ nav:
       - Governance: GOVERNANCE.md
       - Roadmap: ROADMAP.md
 
+extra_javascript:
+  - https://agentrust-io.com/supernav.js
