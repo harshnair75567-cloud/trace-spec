@@ -23,7 +23,7 @@
 [![Spec](https://img.shields.io/badge/Spec-v0.1-0ea5e9)](spec/trace-v0.1.md)
 [![PyPI](https://img.shields.io/pypi/v/agentrust-trace)](https://pypi.org/project/agentrust-trace/)
 [![CI](https://github.com/agentrust-io/trace-spec/actions/workflows/ci.yml/badge.svg)](https://github.com/agentrust-io/trace-spec/actions/workflows/ci.yml)
-[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white&style=flat)](https://discord.gg/9JWNpH7E)
+[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white&style=flat)](https://discord.gg/grgzFEHgkj)
 
 > **Developer Preview.** Launching at Confidential Computing Summit, June 23 2026.
 
