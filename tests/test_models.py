@@ -150,3 +150,10 @@ def test_okp_jwk_with_key_material_accepted() -> None:
     }
     record = TrustRecord.model_validate(data)
     assert record.cnf.jwk.x is not None
+
+def test_jwk_private_key_d_rejected() -> None:
+    """cnf.jwk must not contain private key parameter d (RFC 8747 §3)."""
+    data = _load("intel-tdx.json")
+    data["cnf"]["jwk"]["d"] = "PRIVATE_KEY_MATERIAL"
+    with pytest.raises(ValidationError):
+        TrustRecord.model_validate(data)
